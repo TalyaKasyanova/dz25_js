@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Внутрішній спосіб підключення - код JavaScript можна вставити безпосередньо в HTML документ, використовуючи тег <script>
+        // Але саме в head встановлюють його дуже рідко, частіше, як і підключення зовнішнього коду, це роблять перед
+        // зариваючим тегом body
+    </script>
+</head>
+
+<body>
+
+    Асинхронне підключення - якщо потрібно завантажувати JavaScript код асинхронно, щоб не затримувати завантаження
+    сторінки, можна використовувати атрибут async
+
+    <script async src="script.js"></script>
+
+    Відкладене підключення - якщо потрібно завантажити JavaScript код після завантаження сторінки, можна використовувати
+    атрибут defer
+
+    <script defer src="script.js"></script>
+
+    Інлайновий спосіб підключення - код JavaScript можна додавати в атрибут HTML елементів, таких як onclick, onload,
+    тощо
+
+    <button onclick="alert('Привіт, світ!')">Натисніть мене</button>
+
+    <script src="script.js">
+        // Зовнішній спосіб підключення - код JavaScript можна зберегти у файлі з розширенням.js і підключити до HTML
+        // сторінки, використовуючи тег script і атрибут src
+        // Цей спосіб найбільш розповсюджений, щоб всі дані на сторінці завантажились і тоді вже спрацював певний код
+    </script>
+</body>
+
+</html>
